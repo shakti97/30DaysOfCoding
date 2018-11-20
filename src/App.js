@@ -18,6 +18,14 @@ const Ilist=styled.li`
     display : inline
     border : 0.2em solid blue
 `;
+const Linked=styled(Link)`
+    margin : 4.0em 
+    color : blue
+     
+`
+const StyleLink=styled.div`
+  text-align : center
+`
 class App extends Component {
   render() {
     return (
@@ -28,10 +36,10 @@ class App extends Component {
         </header>
         </div>
         <body>
-          <UnList>
-            <Ilist><Link to="/Component1">Component1</Link></Ilist>
-            <Ilist><Link to="/Component2">Component2</Link></Ilist>
-          </UnList>
+          <StyleLink>
+            <Linked to="/Component1">Component1</Linked>
+            <Linked to="/Component2">Component2</Linked>
+            </StyleLink>
           <Switch>
             <Route exact path="/" component={BeforeHOCComponenet1}/>
             <Route path="/Component1" component={BeforeHOCComponenet1}/>
