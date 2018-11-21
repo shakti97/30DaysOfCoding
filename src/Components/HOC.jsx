@@ -26,3 +26,4 @@ function HOC(WrappedComponent,Data){
 
     }
 }
+export default HOC;
