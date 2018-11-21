@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Component1 from './Component1';
 
 const Form=styled.form`
         text-align : center;
@@ -33,23 +34,7 @@ class BeforeHOCComponent1 extends React.Component {
     }
     render() {
         return (
-            <React.Fragment>
-                {/* you can also  use <> for shorter syntax of react fragment */}
-                <Form >
-                    <div>
-                        <Label >Name</Label>
-                        <Span>{this.state.name}</Span>
-                    </div>
-                    <div>
-                        <Label>Address</Label>
-                        <Span>{this.state.address}</Span>
-                    </div>
-                    <div>
-                        <Label >Mobile</Label>
-                        <Span>{this.state.mobile}</Span>
-                    </div>
-                </Form>
-            </React.Fragment>
+            <Component1 data={this.state}/>
         )
     }
 }
