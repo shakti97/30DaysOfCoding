@@ -28,6 +28,7 @@ const Linked=styled(NavLink)`
 const StyleLink=styled.div`
   text-align : center
 `
+
 class App extends Component {
   render() {
     return (
@@ -37,8 +38,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         </div>
-        
-          <StyleLink>
+        <div>
+          
+        </div>
+          {/* <StyleLink>
             <Linked to="/Component1">Component1</Linked>
             <Linked to="/Component2">Component2</Linked>
             <Linked to='/Component1AfterHOC'>Component1AfterHOC</Linked>
@@ -51,7 +54,7 @@ class App extends Component {
             <Route path="/Component1AfterHOC" component={Component1throughHOC}/>
             <Route path="/Component2AfterHoc" component={Component2throughHOC}/>
           </Switch>
-        
+         */}
       </div>
     );
   }
