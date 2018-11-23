@@ -1,10 +1,11 @@
+import React from 'react';
 import Loader from 'react-loader-spinner'
-export default class Spinner extends React.component {
+export default class Spinner extends React.Component {
  //other logic
    render() {
     return(
      <Loader 
-        type="Puff"
+        type="Bars"
         color="#00BFFF"
         height="100"	
         width="100"

@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{Component} from 'react';
+import Spinner from './loader';
 
-class Component1 extends React.Component{
+class Component1 extends Component{
     constructor(props){
         super(props);
         this.state={
-            posts : []
+            posts : ""
         }
     }
     componentWillMount(){
@@ -12,6 +13,9 @@ class Component1 extends React.Component{
         .then(response=>{
             response.json().then(data=>{
                 console.log("data",data);
+                this.setState({
+                    posts : data
+                })
             })
         }).catch(error=>{
             console.log("error ",error);
@@ -20,17 +24,16 @@ class Component1 extends React.Component{
     render(){
         return(
             <div>
-                this.state.posts.map(element=>{
-                    <div>
+                {this.state.posts ? this.state.posts.map(element=>{
+                    return <div>
                     <ul>
-                        <li>{element.userId}</li>
-                        <li>{element.id}</li>
-                        <li>{element.title}</li>
-                        <li>{element.body}</li>
+                        <li >{element.id}</li>
+                        <li >{element.title}</li>
+                        <li >{element.body}</li>
                     </ul>
                     <br/>
                     </div>
-                })
+                }) : <center><Spinner/></center>}
             </div>
         )
     }

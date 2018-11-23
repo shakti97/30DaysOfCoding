@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Switch ,Route } from 'react-router';
-import {NavLink} from 'react-router-dom';
-import BeforeHOCComponenet1 from "./Components/BeforeHOCComponent1";
-import BeforeHOCComponenet2 from "./Components/BeforeHOCComponent2";
-import styled from 'styled-components';
-import Component1throughHOC from './Components/AfterHOCComponent1';
-import Component2throughHOC from  './Components/AfterHOCComponent2';
+// import {NavLink} from 'react-router-dom';
+// import BeforeHOCComponenet1 from "./Components/BeforeHOCComponent1";
+// import BeforeHOCComponenet2 from "./Components/BeforeHOCComponent2";
+// import styled from 'styled-components';
+// import Component1throughHOC from './Components/AfterHOCComponent1';
+// import Component2throughHOC from  './Components/AfterHOCComponent2';
 import Component1 from './Loader/Component1';
 import Component2 from './Loader/Component2';
 import Spinner from './Loader/loader';
@@ -23,14 +23,14 @@ import Spinner from './Loader/loader';
 //     display : inline
 //     border : 0.2em solid blue
 // `;
-const Linked=styled(NavLink)`
-    margin : 4.0em 
-    color : blue
+// const Linked=styled(NavLink)`
+//     margin : 4.0em 
+//     color : blue
      
-`
-const StyleLink=styled.div`
-  text-align : center
-`
+// `
+// const StyleLink=styled.div`
+//   text-align : center
+// `
 
 class App extends Component {
   render() {
