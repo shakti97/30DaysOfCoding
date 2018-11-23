@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Spinner from './loader';
+import AwesomeComponent from './spinner2';
 
 class Component1 extends Component{
     constructor(props){
@@ -33,7 +34,7 @@ class Component1 extends Component{
                     </ul>
                     <br/>
                     </div>
-                }) : <center><Spinner/></center>}
+                }) : <center><Spinner/><AwesomeComponent/></center>}
             </div>
         )
     }
