@@ -1,5 +1,5 @@
 import Loader from 'react-loader-spinner'
-export default class App extends React.component {
+export default class Spinner extends React.component {
  //other logic
    render() {
     return(
