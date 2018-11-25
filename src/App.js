@@ -8,9 +8,11 @@ import {Switch ,Route } from 'react-router';
 // import styled from 'styled-components';
 // import Component1throughHOC from './Components/AfterHOCComponent1';
 // import Component2throughHOC from  './Components/AfterHOCComponent2';
-import Component1 from './Loader/Component1';
-import Component2 from './Loader/Component2';
-import Spinner from './Loader/loader';
+// import Component1 from './Loader/Component1';
+// import Component2 from './Loader/Component2';
+// import Spinner from './Loader/loader';
+// import beforeFRefs from './ForwardingRefs/beforeFRefs';
+import beforeFRparent from './ForwardingRefs/beforeFRparent';
 
 
 // const UnList= styled.ul`
@@ -57,10 +59,12 @@ class App extends Component {
             <Route path="/Component2" component={BeforeHOCComponenet2}/>
             <Route path="/Component1AfterHOC" component={Component1throughHOC}/>
             <Route path="/Component2AfterHoc" component={Component2throughHOC}/> */}
-            <Route path='/Component1' exact component={Component1}/>
+            {/* <Route path='/Component1' exact component={Component1}/>
             <Route path='/Component2' exact component={Component2}/>
             <Route path='/' exact component={Component2}/>
-            <Route path='/Loader' exact component={Spinner}/>
+            <Route path='/Loader' exact component={Spinner}/> */}
+            {/* <Route path='/' exact component={beforeFRefs}/> */}
+            <Route path='/' exact component={beforeFRparent}/>
           </Switch>
          
       </div>

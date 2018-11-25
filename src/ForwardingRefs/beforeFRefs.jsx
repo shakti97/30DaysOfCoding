@@ -4,8 +4,10 @@ class beforeFRefs extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <h2>Auto Focus</h2>
-                <input type='text' ref={()=>{x && x.focus}}/>
+                <center>
+                    <h2>Auto Focus</h2>
+                    <input type='text' ref={(x)=>{x && x.focus()}}/>
+                </center>
             </React.Fragment>
         )
     }
