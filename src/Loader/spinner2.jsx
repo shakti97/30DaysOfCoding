@@ -5,7 +5,7 @@ import { css } from 'react-emotion';
 // First way to import
 // import { ClipLoader } from 'react-spinners';
 // Another way to import
-import ClipLoader from 'react-spinners/ClipLoader';
+import BeatLoader from 'react-spinners/BeatLoader';
  
 const override = css`
     display: block;
@@ -23,10 +23,10 @@ class AwesomeComponent extends React.Component {
   render() {
     return (
       <div className='sweet-loading'>
-        <ClipLoader
+        <BeatLoader
           className={override}
           sizeUnit={"px"}
-          size={150}
+          size={30}
           color={'#123abc'}
           loading={this.state.loading}
         />
