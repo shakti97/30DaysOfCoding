@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Switch ,Route } from 'react-router';
+import AfterFRparent from './ForwardingRefs/afterFRparent';
 // import {NavLink} from 'react-router-dom';
 // import BeforeHOCComponenet1 from "./Components/BeforeHOCComponent1";
 // import BeforeHOCComponenet2 from "./Components/BeforeHOCComponent2";
@@ -12,7 +13,7 @@ import {Switch ,Route } from 'react-router';
 // import Component2 from './Loader/Component2';
 // import Spinner from './Loader/loader';
 // import beforeFRefs from './ForwardingRefs/beforeFRefs';
-import beforeFRparent from './ForwardingRefs/beforeFRparent';
+// import beforeFRparent from './ForwardingRefs/beforeFRparent';
 
 
 // const UnList= styled.ul`
@@ -64,7 +65,8 @@ class App extends Component {
             <Route path='/' exact component={Component2}/>
             <Route path='/Loader' exact component={Spinner}/> */}
             {/* <Route path='/' exact component={beforeFRefs}/> */}
-            <Route path='/' exact component={beforeFRparent}/>
+            {/* <Route path='/' exact component={beforeFRparent}/> */}
+            <Route path='/' exact component={AfterFRparent}/>
           </Switch>
          
       </div>
