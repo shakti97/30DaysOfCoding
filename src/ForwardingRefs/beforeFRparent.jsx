@@ -1,12 +1,12 @@
 import React from 'react';
-import beforeFRchild from './beforeFRchild';
+import BeforeFRchild from './beforeFRchild';
 
 class beforeFRparent extends React.Component{
     render(){
         return(
             <center>
             <h2>Auto Focus</h2>
-            <beforeFRchild ref={(x)=>{x && x.focus()}}/>
+            <BeforeFRchild myref={x=>x && x.focus()}/>
             </center>
         )
     }

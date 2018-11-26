@@ -1,11 +1,10 @@
 import React from 'react';
 
-const beforeFRchild=(props)=>{
+const BeforeFRchild=(props)=>{
     return(
         <>
-        <h4>beforeFRchild</h4>
-        <input type='text' {...props}/>
+            <input type='text' ref={props.myref}/>
         </>    
     )
 }
-export default beforeFRchild;
+export default BeforeFRchild;
