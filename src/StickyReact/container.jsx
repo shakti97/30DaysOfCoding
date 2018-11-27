@@ -53,12 +53,12 @@ const Container=()=>{
                     <div className="col-md-4">
                         
                             <div className='container'>
-                                <Sticky topOffset={80}>
-                                {(style)=>
-                                <p style={{...style,color:'green',backgroundColor : 'skyblue'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi velit fugit omnis nemo necessitatibus, voluptatum commodi odit cumque, dolore vitae aspernatur accusantium? Accusantium perferendis atque sequi aliquid quasi, adipisci rerum.
+                                {/* <Sticky >
+                                {({style})=> */}
+                                <p style={{color:'green',backgroundColor : 'skyblue'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi velit fugit omnis nemo necessitatibus, voluptatum commodi odit cumque, dolore vitae aspernatur accusantium? Accusantium perferendis atque sequi aliquid quasi, adipisci rerum.
                                 Possimus magni tempore dolores! Fugiat asperiores exercitationem numquam facilis ut officia veniam incidunt maxime. Iusto, id quisquam. Nesciunt numquam sunt, sapiente architecto et commodi alias sit impedit ipsam odit totam?
                                 Perferendis deserunt recusandae voluptatem quis doloribus ipsam ut! Et maiores officia, aliquid, voluptate excepturi aut aperiam ut possimus sunt atque molestias earum sit eligendi impedit asperiores facere nesciunt quis libero!</p>
-                                }</Sticky>
+                                {/* }</Sticky> */}
                             </div>
                         
                     </div>
