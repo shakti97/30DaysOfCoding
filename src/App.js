@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import {Switch ,Route } from 'react-router';
 // import AfterFRparent from './ForwardingRefs/afterFRparent';
-import Container from './StickyReact/container';
+// import Container from './StickyReact/container';
+import Dialog from './MaterilizeCss/dialog';
 // import {NavLink} from 'react-router-dom';
 // import BeforeHOCComponenet1 from "./Components/BeforeHOCComponent1";
 // import BeforeHOCComponenet2 from "./Components/BeforeHOCComponent2";
@@ -67,7 +68,8 @@ class App extends Component {
             <Route path='/Loader' exact component={Spinner}/> */}
             {/* <Route path='/' exact component={beforeFRefs}/> */}
             {/* <Route path='/' exact component={beforeFRparent}/> */}
-            <Route path='/' exact component={Container}/>
+            {/* <Route path='/' exact component={Container}/> */}
+            <Route path='/' exact component={Dialog}/>
           </Switch>
          
       </div>
